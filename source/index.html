@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="root" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+  </head>
+
+  <body class="page">
+
+    <header class="page__header main-header container">
+      <div class="main-header__menu">
+        <a class="main-link">
+          <span class="visually-hidden">To homepage</span>
+        </a>
+        <button class="main-header__menu-btn hidden" aria-label="Show menu">
+        </button>
+      </div>
+      <nav class="main-header__nav navigation navigation--header">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <h1 class="visually-hidden">Alex Spencer's portfolio site</h1>
+      <section class="page__block page__block--hero hero container">
+        <h2 class="visually-hidden">Introduction</h2>
+        <div class="hero__wrapper">
+          <p class="hero__text heading heading--hero">
+            Hey, I’m Alex Spencer and I love building beautiful websites
+          </p>
+          <a href="#about-me" class="hero__link btn btn--dark btn--hero">About Me</a>
+        </div>
+      </section>
+
+      <section class="page__block page__block--presentation presentation container">
+        <div class="presentation__photo">
+          <picture>
+            <source type="image/webp" media="(min-width:1200px)"
+              srcset="images/homepage/desktop/image-homepage-profile.webp 1x, images/homepage/desktop/image-homepage-profile@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="images/homepage/tablet/image-homepage-profile.webp 1x, images/homepage/tablet/image-homepage-profile@2x.webp 2x">
+            <source type="image/webp"
+              srcset="images/homepage/mobile/image-homepage-profile.webp 1x, images/homepage/mobile/image-homepage-profile@2x.webp 2x">
+            <source media="(min-width:1200px)"
+              srcset="images/homepage/desktop/image-homepage-profile.jpg 1x, images/homepage/desktop/image-homepage-profile@2x.jpg 2x">
+            <source media="(min-width:768px)"
+              srcset="images/homepage/tablet/image-homepage-profile.jpg 1x, images/homepage/tablet/image-homepage-profile@2x.jpg 2x">
+            <img src="images/homepage/mobile/image-homepage-profile.jpg" width="311" height="346" alt="My portrait"
+              srcset="images/homepage/mobile/image-homepage-profile@2x.jpg 2x">
+          </picture>
+        </div>
+        <div class="presentation__info">
+          <h2 class="presentation__heading heading" id="about-me">About Me</h2>
+          <p class="presentation__text">
+            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+          <a href="portfolio.html" class="presentation__link btn">Go to Portfolio</a>
+        </div>
+      </section>
+
+      <section class="page__block invitation container">
+        <p class="invitation__text heading">
+          Interested in doing a&nbsp;project together?
+        </p>
+        <a href="contact.html" class="invitation__link btn">Contact Me</a>
+      </section>
+
+    </main>
+
+    <footer class="page__footer main-footer">
+      <div class="main-footer__wrapper container">
+        <a class="main-link main-link--footer">
+          <span class="visually-hidden">To homepage</span>
+        </a>
+        <div class="main-footer__nav navigation">
+          <ul class="navigation__list navigation__list--footer">
+            <li class="navigation__item">
+              <a class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="https://github.co">
+                <span class="visually-hidden">Github</span>
+                <svg width="25" height="26">
+                  <use xlink:href="images/sprite.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://twitter.com">
+                <span class="visually-hidden">Twitter</span>
+                <svg width="24" height="26">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://linkedin.com/">
+                <span class="visually-hidden">LinkedIn</span>
+                <svg width="24" height="26">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

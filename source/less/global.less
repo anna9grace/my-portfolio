@@ -1,0 +1,30 @@
+body {
+  min-width: @min-mobile;
+  padding: 0;
+  margin: 0;
+  background-color: @bg-color;
+  .main-text-font (15px; 30px; 80%);
+}
+
+@media (min-width: @med-tablet) {
+  body {
+    .main-text-font (16px);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

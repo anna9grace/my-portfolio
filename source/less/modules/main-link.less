@@ -1,0 +1,59 @@
+.main-link {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 32px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    border: 16px solid transparent;
+  }
+
+  &::after {
+    left: 28px;
+    top: 6px;
+    border-top: 26px solid @main-color-dark;
+    border-bottom: 0;
+  }
+
+  &::before {
+    border-bottom: 26px solid @main-color-dark;
+    border-top: 0;
+  }
+
+  &--footer {
+    &::after {
+      top: 3px;
+      border-top-color: @main-color-light;
+    }
+
+    &::before {
+      top: -3px;
+      border-bottom-color: @main-color-light;
+    }
+  }
+}
+
+@media (min-width: @min-tablet) {
+  .main-link {
+    &::after {
+      top: 14px;
+    }
+
+    &::before {
+      top: 8px;
+    }
+
+    &--footer {
+      &::after {
+        top: 5px;
+      }
+
+      &::before {
+        top: -1px;
+      }
+    }
+  }
+}

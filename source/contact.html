@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title>Анна Родионова - контакты</title>
+</head>
+
+  <body class="page">
+
+    <header class="page__header main-header container">
+      <div>
+        <a class="main-link" href="index.html">
+          <span class="visually-hidden">На главную</span>
+        </a>
+        <button class="main-header__menu hidden" aria-label="Show menu">
+        </button>
+      </div>
+      <nav class="main-header__nav navigation navigation--header">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">На главную</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Мои контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <h1 class="visually-hidden">My contacts</h1>
+      <section class="page__contacts container">
+        <div class="contacts__block contacts">
+          <h2 class="contacts__title heading">Get in Touch</h2>
+          <p class="contacts__text">
+            I’d love to hear about what you’re working on and how I could help. I’m currently
+            looking for a new role and am open to a wide range of opportunities. My preference
+            would be to find a position in a company in London. But I’m also happy to hear about
+            opportunites that don’t fit that description. I’m a hard-working and positive person
+            who will always approach each task with a sense of purpose and attention to detail.
+            Please do feel free to check out my online profiles below and get in touch using the form.
+          </p>
+          <div class="contacts__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item socials__item--dark">
+                <a href="https://github.co">
+                  <span class="visually-hidden">Github</span>
+                  <svg width="25" height="26">
+                    <use xlink:href="images/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item socials__item--dark">
+                <a href="https://twitter.com">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg width="24" height="26">
+                    <use xlink:href="images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item socials__item--dark">
+                <a href="https://linkedin.com/">
+                  <span class="visually-hidden">LinkedIn</span>
+                  <svg width="24" height="26">
+                    <use xlink:href="images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contacts__block">
+          <h2 class="contacts__title heading">Contact Me</h2>
+          <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="form__field-block">
+              <label for="name-field">Name</label>
+              <input class="form__field" type="text" name="name" id="name-field" placeholder="Jane Appleseed">
+            </p>
+            <p class="form__field-block">
+              <label for="email-field">Email Address</label>
+              <input class="form__field" type="email" name="email" id="email-field" placeholder="email@example.com">
+            </p>
+            <p class="form__field-block">
+              <label for="message-field">Message</label>
+              <textarea class="form__field" name="message" id="message-field" rows="5" placeholder="How can I help?"></textarea>
+            </p>
+          </form>
+          <button class="btn btn--dark btn--submit" type="submit">
+            Send Message
+          </button>
+        </div>
+    </section>
+    </main>
+
+    <footer class="page__footer main-footer">
+      <div class="main-footer__wrapper container">
+        <a class="main-link main-link--footer" href="index.html">
+          <span class="visually-hidden">To homepage</span>
+        </a>
+        <div class="main-footer__nav navigation">
+          <ul class="navigation__list navigation__list--footer">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="https://github.co">
+                <span class="visually-hidden">Github</span>
+                <svg width="25" height="26">
+                  <use xlink:href="images/sprite.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://twitter.com">
+                <span class="visually-hidden">Twitter</span>
+                <svg width="24" height="26">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://linkedin.com/">
+                <span class="visually-hidden">LinkedIn</span>
+                <svg width="24" height="26">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

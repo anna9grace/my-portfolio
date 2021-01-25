@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: @main-color-dark;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: @max-mobile) {
+  .main-footer {
+    padding: 56px;
+  }
+
+  .main-footer__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @min-tablet) {
+  .main-footer__nav {
+    margin-right: auto;
+  }
+}

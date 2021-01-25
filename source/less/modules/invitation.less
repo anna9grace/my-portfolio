@@ -1,0 +1,59 @@
+.invitation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invitation__text {
+  margin: 0;
+  background-color: @bg-color;
+}
+
+@media (max-width: @max-mobile) {
+  .invitation {
+    flex-direction: column;
+  }
+
+  .invitation__text {
+    margin-bottom: 39px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @min-tablet) {
+  .invitation {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: fade(@main-color-dark, 15%);
+      z-index: -1;
+    }
+  }
+
+  .invitation__link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 50%;
+      left: -33px;
+      width: 32px;
+      background-color: inherit;
+    }
+  }
+
+  .invitation__text {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: @med-tablet) {
+  .invitation__text {
+    max-width: 35%;
+  }
+}
