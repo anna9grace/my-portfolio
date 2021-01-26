@@ -6,8 +6,17 @@
   height: 26px;
 }
 
-.socials__item {
+.socials__item a {
   color: @main-color-light;
+
+  &:hover,
+  &:focus {
+    color: @active-color;
+  }
+
+  &:active {
+    color: @main-color-medium;
+  }
 
   &--dark {
     color: @main-color-dark;

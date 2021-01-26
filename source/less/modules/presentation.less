@@ -14,6 +14,22 @@
   margin: 0;
 }
 
+.presentation__side-link {
+  text-decoration: underline;
+  color: @button-color;
+
+  &:hover,
+  &:focus {
+    color: @active-color;
+  }
+
+  &:active {
+    color: fade(@button-color, 30%);
+    outline: none;
+  }
+}
+
+
 @media (max-width: @max-mobile) {
   .presentation__photo {
     margin-bottom: 31px;
@@ -31,7 +47,9 @@
   }
 
   .presentation__photo {
-    width: 281px;
+    width: 40%;
+    max-width: 500px;
+    margin-top: 132px;
     flex-shrink: 0;
   }
 
@@ -40,12 +58,15 @@
     padding-top: 51px;
     padding-bottom: 43px;
     align-self: center;
+    border-bottom: none;
   }
 }
 
 @media (min-width: @med-tablet) {
   .presentation__photo {
     width: 48.7%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     img {
       object-fit: cover;
@@ -53,8 +74,8 @@
   }
 
   .presentation__info {
-    margin-left: 11.3%;
-    margin-right: 92px;
+    margin-left: 6%;
+    margin-right: 40px;
     padding: 47px 0;
   }
 }

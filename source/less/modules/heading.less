@@ -1,10 +1,21 @@
 .heading {
-  .heading-font(40px; 42px; bold);
+  .heading-font(32px; 42px; bold);
   letter-spacing: -0.357143px;
 
   &--small {
-    .heading-font(32px; 42px; normal);
+    font-weight: normal;
     letter-spacing: -0.285714px;
+  }
+
+  &--hero {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: @min-tablet) {
+  .heading--hero {
+    .heading-font(40px; 42px);
   }
 }
 

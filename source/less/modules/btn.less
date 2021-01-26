@@ -11,12 +11,36 @@
   border: 1px solid @main-color-dark;
   background-color: @bg-color;
 
+
+  &:hover,
+  &:focus {
+    color: @main-color-light;
+    background-color: @active-color;
+    border-color: @main-color-light;
+  }
+
+  &:active {
+    background-color: @main-color-medium;
+    outline: none;
+  }
+
   &--dark {
     color: @main-color-light;
     background-color: @button-color;
     border: none;
     padding-left: 39px;
     padding-right: 39px;
+
+    &:hover,
+    &:focus {
+      color: @button-color;
+      background-color: @active-color;
+    }
+
+    &:active {
+      background-color: @main-color-medium;
+      outline: none;
+    }
   }
 
   &--hero {

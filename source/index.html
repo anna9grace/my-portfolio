@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="css/styles.min.css">
-    <title>Frontend Mentor | Minimalist Portfolio</title>
+    <title>Анна Родионова - верстка сайтов и фронтенд</title>
   </head>
 
   <body class="page">
 
     <header class="page__header main-header container">
       <div class="main-header__menu">
-        <a class="main-link">
-          <span class="visually-hidden">To homepage</span>
+        <a class="main-link main-link--current">
+          <span class="visually-hidden">На главную</span>
         </a>
         <button class="main-header__menu-btn hidden" aria-label="Show menu">
         </button>
@@ -21,27 +21,27 @@
       <nav class="main-header__nav navigation navigation--header">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">Home</a>
+            <a class="navigation__link navigation__link--current">На главную</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="portfolio.html">Portfolio</a>
+            <a class="navigation__link" href="portfolio.html">Портфолио</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="contact.html">Contact Me</a>
+            <a class="navigation__link" href="contact.html">Мои контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page__main">
-      <h1 class="visually-hidden">Alex Spencer's portfolio site</h1>
+      <h1 class="visually-hidden">Сайт-портфолио фронтенд-разработчика Анны Родионовой</h1>
       <section class="page__block page__block--hero hero container">
-        <h2 class="visually-hidden">Introduction</h2>
+        <h2 class="visually-hidden">Знакомство</h2>
         <div class="hero__wrapper">
           <p class="hero__text heading heading--hero">
-            Hey, I’m Alex Spencer and I love building beautiful websites
+            Привет!<br>Меня зовут Анна Родионова и я люблю делать красивые и удобные сайты
           </p>
-          <a href="#about-me" class="hero__link btn btn--dark btn--hero">About Me</a>
+          <a href="#about-me" class="hero__link btn btn--dark btn--hero">Обо мне</a>
         </div>
       </section>
 
@@ -49,59 +49,70 @@
         <div class="presentation__photo">
           <picture>
             <source type="image/webp" media="(min-width:1200px)"
-              srcset="images/homepage/desktop/image-homepage-profile.webp 1x, images/homepage/desktop/image-homepage-profile@2x.webp 2x">
-            <source type="image/webp" media="(min-width:768px)"
-              srcset="images/homepage/tablet/image-homepage-profile.webp 1x, images/homepage/tablet/image-homepage-profile@2x.webp 2x">
-            <source type="image/webp"
-              srcset="images/homepage/mobile/image-homepage-profile.webp 1x, images/homepage/mobile/image-homepage-profile@2x.webp 2x">
-            <source media="(min-width:1200px)"
-              srcset="images/homepage/desktop/image-homepage-profile.jpg 1x, images/homepage/desktop/image-homepage-profile@2x.jpg 2x">
-            <source media="(min-width:768px)"
-              srcset="images/homepage/tablet/image-homepage-profile.jpg 1x, images/homepage/tablet/image-homepage-profile@2x.jpg 2x">
-            <img src="images/homepage/mobile/image-homepage-profile.jpg" width="311" height="346" alt="My portrait"
-              srcset="images/homepage/mobile/image-homepage-profile@2x.jpg 2x">
+              srcset="images/homepage/image-homepage-profile.webp 1x">
+            <img src="images/homepage/image-homepage-profile.jpg" width="231" height="346" alt="Портрет">
           </picture>
         </div>
         <div class="presentation__info">
-          <h2 class="presentation__heading heading" id="about-me">About Me</h2>
+          <h2 class="presentation__heading heading" id="about-me">Обо мне</h2>
           <p class="presentation__text">
-            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+            Я - начинающий фронтенд-разработчик из Санкт-Петербурга.<br>
+            В IT я недавно, но точно надолго.
           </p>
-          <a href="portfolio.html" class="presentation__link btn">Go to Portfolio</a>
+          <p class="presentation__text">
+            Много лет я работала по своей основной (экономической) специальности, но все время находилась в поисках дела, которое захватило бы меня с головой. Именно таким делом и оказалась веб-разработка.
+            Я страстно люблю учиться и осваивать новое, и веб-разработка с ее разнообразием задач и необходимостью постоянно освежать свои знания  - именно та сфера, где я могу реализовать себя по максимуму.
+          </p>
+          <p class="presentation__text">
+            В 2020-2021 году я прошла 4 профессиональных курса по верстке и Javascript от <a class="presentation__side-link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a> и успешно защитила проекты. <a class="presentation__side-link" href="https://htmlacademy.ru/profile/id1445957" target="_blank">Здесь</a> можно увидеть мои сертификаты.
+          </p>
+          <p class="presentation__text">
+            Что я знаю и умею:
+            <ul>
+              <li>адаптивная верстка (HTML5, CSS/SCSS/LESS)</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Системы контроля версий (GIT)</li>
+              <li>Сборщики (Gulp, Webpack)</li>
+              <li>Figma, Adobe Photoshop</li>
+              <li>"good practices" верстки (семантичность, доступность, оптимизация)</li>
+            </ul>
+            В настоящее время изучаю React.
+          </p>
+          <a href="portfolio.html" class="presentation__link btn">К портфолио</a>
         </div>
       </section>
 
-      <section class="page__block invitation container">
+      <div class="page__block invitation container">
         <p class="invitation__text heading">
-          Interested in doing a&nbsp;project together?
+          Заинтересованы в совместной работе?
         </p>
-        <a href="contact.html" class="invitation__link btn">Contact Me</a>
-      </section>
+        <a href="contact.html" class="invitation__link btn">Дайте мне знать</a>
+      </div>
 
     </main>
 
     <footer class="page__footer main-footer">
       <div class="main-footer__wrapper container">
         <a class="main-link main-link--footer">
-          <span class="visually-hidden">To homepage</span>
+          <span class="visually-hidden">На главную</span>
         </a>
         <div class="main-footer__nav navigation">
           <ul class="navigation__list navigation__list--footer">
             <li class="navigation__item">
-              <a class="navigation__link">Home</a>
+              <a class="navigation__link navigation__link--footer navigation__link--current">На главную</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="portfolio.html">Portfolio</a>
+              <a class="navigation__link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="contact.html">Contact Me</a>
+              <a class="navigation__link" href="contact.html">Мои контакты</a>
             </li>
           </ul>
         </div>
         <div class="main-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="https://github.co">
+              <a href="https://github.com/anna9grace" target="_blank">
                 <span class="visually-hidden">Github</span>
                 <svg width="25" height="26">
                   <use xlink:href="images/sprite.svg#github"></use>
@@ -109,18 +120,18 @@
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://twitter.com">
-                <span class="visually-hidden">Twitter</span>
+              <a href="https://t.me/@anna9grace" target="_blank">
+                <span class="visually-hidden">Телеграм</span>
                 <svg width="24" height="26">
-                  <use xlink:href="images/sprite.svg#twitter"></use>
+                  <use xlink:href="images/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://linkedin.com/">
-                <span class="visually-hidden">LinkedIn</span>
+              <a href="https://vk.com/china_cat_sunflower" target="_blank">
+                <span class="visually-hidden">ВКонтакте</span>
                 <svg width="24" height="26">
-                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                  <use xlink:href="images/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>

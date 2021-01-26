@@ -36,6 +36,22 @@
   }
 }
 
+.main-link:not(.main-link--current):hover,
+.main-link:not(.main-link--current):focus {
+  &::after,
+  &::before {
+    opacity: 0.6;
+  }
+}
+
+.main-link:not(.main-link--current):active {
+  &::after,
+  &::before {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
 @media (min-width: @min-tablet) {
   .main-link {
     &::after {

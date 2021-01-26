@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.min.css">
-  <title>Frontend Mentor | My Projects</title>
+  <title>Анна Родионова - портфолио</title>
 </head>
 
   <body class="page">
@@ -14,7 +14,7 @@
     <header class="page__header main-header container">
       <div>
         <a class="main-link" href="index.html">
-          <span class="visually-hidden">To homepage</span>
+          <span class="visually-hidden">На главную</span>
         </a>
         <button class="main-header__menu hidden" aria-label="Show menu">
         </button>
@@ -22,172 +22,167 @@
       <nav class="main-header__nav navigation navigation--header">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Home</a>
+            <a class="navigation__link" href="index.html">На главную</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link">Portfolio</a>
+            <a class="navigation__link navigation__link--current">Портфолио</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="contact.html">Contact Me</a>
+            <a class="navigation__link" href="contact.html">Мои контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page__main">
-      <h1 class="visually-hidden">My works</h1>
+      <h1 class="visually-hidden">Мои работы</h1>
       <section class="page__block works container">
         <ul class="works__list">
           <li class="works__item project">
             <picture>
-              <source type="image/webp" media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-manage.webp 1x, images/portfolio/desktop/image-portfolio-manage@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-manage.webp 1x, images/portfolio/tablet/image-portfolio-manage@2x.webp 2x">
               <source type="image/webp"
-                srcset="images/portfolio/mobile/image-portfolio-manage.webp 1x, images/portfolio/mobile/image-portfolio-manage@2x.webp 2x">
-              <source media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-manage.jpg 1x, images/portfolio/desktop/image-portfolio-managep@2x.jpg 2x">
-              <source media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-manage.jpg 1x, images/portfolio/tablet/image-portfolio-manage@2x.jpg 2x">
-            <img class="project__picture" src="images/portfolio/mobile/image-portfolio-manage.jpg" width="311" height="288" alt="Preview of the Manage project"
-                srcset="images/portfolio/mobile/image-portfolio-manage@2x.jpg 2x">
+                srcset="images/portfolio/bikes-1x.webp 1x, images/portfolio/bikes-2x.webp 2x">
+              <img class="project__picture" src="images/portfolio/bikes-1x.jpg" width="311" height="288" alt="Превью проекта Велосипеды"
+                srcset="images/portfolio/bikes-2x.jpg 2x">
             </picture>
             <div class="project__description">
               <h3 class="project__title heading">
-                Manage
+                Велосипеды
               </h3>
               <p class="project__text">
-                This project required me to build a fully responsive landing page to the designs provided.
-                I used HTML5, along with CSS Grid&nbsp;and JavaScript for the areas that required interactivity,
-                such as the testimonial slider.
+                Одностраничный лендинг магазина велосипедов.
               </p>
-              <a class="project__link btn" href="manage.html">
-                View Project
+              <p class="project__text">
+                Сетка выполнена на флексах и гридах, предусмотрен адаптив ("резина") под разные устройства.
+                Верстка выполнена с помощью препроцессора SCSS, проект собран на Gulp. Мобильное меню реализовано на JS (ES6).
+              </p>
+              <a class="project__link btn" href="https://bike-shop.vercel.app/" target="_blank">
+                Посмотреть проект
               </a>
             </div>
           </li>
           <li class="works__item project">
             <picture>
-              <source type="image/webp" media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-bookmark.webp 1x, images/portfolio/desktop/image-portfolio-bookmark@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-bookmark.webp 1x, images/portfolio/tablet/image-portfolio-bookmark@2x.webp 2x">
               <source type="image/webp"
-                srcset="images/portfolio/mobile/image-portfolio-bookmark.webp 1x, images/portfolio/mobile/image-portfolio-bookmark@2x.webp 2x">
-              <source media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-bookmark.jpg 1x, images/portfolio/desktop/image-portfolio-bookmark@2x.jpg 2x">
-              <source media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-bookmark.jpg 1x, images/portfolio/tablet/image-portfolio-bookmark@2x.jpg 2x">
-              <img class="project__picture" src="images/portfolio/mobile/image-portfolio-bookmark.jpg" width="311" height="288" alt="Preview of the Bookmark project"
-                srcset="images/portfolio/mobile/image-portfolio-bookmark@2x.jpg 2x">
+                srcset="images/portfolio/cat-energy-1x.webp 1x, images/portfolio/cat-energy-2x.webp 2x">
+              <img class="project__picture" src="images/portfolio/cat-energy-1x.jpg" width="311" height="288"     alt="Превью проекта Cat Energy"
+                srcset="images/portfolio/cat-energy-2x.jpg 2x">
             </picture>
             <div class="project__description">
               <h3 class="project__title heading">
-                Bookmark
+                Cat Energy
               </h3>
               <p class="project__text">
-                This project required me to build a fully responsive landing page to the designs provided. I
-                used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such
-                as the features section.
+                Трех-страничный интернет-магазин. Проект был выполнен в рамках курса по адаптивной верстке - как экзаменационный проект.
               </p>
-              <a class="project__link btn" href="bookmark.html">
-                View Project
+              <p class="project__text">
+                Сетка выполнена на флексах и гридах, предусмотрен адаптив под разные устройства.
+                Верстка выполнена с помощью препроцессора SCSS, проект собран на Gulp. Мобильное меню и валидация форм реализована на JS (ES5).
+              </p>
+              <a class="project__link btn" href="https://cat-energy-20.vercel.app/" target="_blank">
+                Посмотреть проект
               </a>
             </div>
           </li>
           <li class="works__item project">
             <picture>
-              <source type="image/webp" media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-insure.webp 1x, images/portfolio/desktop/image-portfolio-insure@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-insure.webp 1x, images/portfolio/tablet/image-portfolio-insure@2x.webp 2x">
               <source type="image/webp"
-                srcset="images/portfolio/mobile/image-portfolio-insure.webp 1x, images/portfolio/mobile/image-portfolio-insure@2x.webp 2x">
-              <source media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-insure.jpg 1x, images/portfolio/desktop/image-portfolio-insure@2x.jpg 2x">
-              <source media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-insure.jpg 1x, images/portfolio/tablet/image-portfolio-insure@2x.jpg 2x">
-              <img class="project__picture" src="images/portfolio/mobile/image-portfolio-insure.jpg" width="311" height="288" alt="Preview of the Insure project"
-                srcset="images/portfolio/mobile/image-portfolio-insure@2x.jpg 2x">
+                srcset="images/portfolio/keksobook.webp">
+              <img class="project__picture" src="images/portfolio/keksobook.jpg" width="311" height="288" alt="Превью проекта Кексобукинг">
             </picture>
             <div class="project__description">
               <h3 class="project__title heading">
-                Insure
+                Кексобукинг
               </h3>
               <p class="project__text">
-                This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive
-                landing page. The only JavaScript this project required was to enable the toggling of the
-                mobile navigation.
+                Сайт для поиска жилья и публикации своих объявлений. Проект выполнен в рамках курса по JavaScript - как экзаменационный проект.
               </p>
-              <a class="project__link btn" href="insure.html">
-                View Project
+              <p class="project__text">
+                С помощью "ванильного" JavaScript (ES6) была реализована с нуля интерактивность уже сверстанного сайта. Сборка выполнена на Webpack.
+              </p>
+              <a class="project__link btn" href="https://keksobooking-21.vercel.app/" target="_blank">
+                Посмотреть проект
               </a>
             </div>
           </li>
           <li class="works__item project">
             <picture>
-              <source type="image/webp" media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-fylo.webp 1x, images/portfolio/desktop/image-portfolio-fylo@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-fylo.webp 1x, images/portfolio/tablet/image-portfolio-fylo@2x.webp 2x">
               <source type="image/webp"
-                srcset="images/portfolio/mobile/image-portfolio-fylo.webp 1x, images/portfolio/mobile/image-portfolio-fylo@2x.webp 2x">
-              <source media="(min-width:1020px)"
-                srcset="images/portfolio/desktop/image-portfolio-fylo.jpg 1x, images/portfolio/desktopimage-portfolio-fylo@2x.jpg 2x">
-              <source media="(min-width:768px)"
-                srcset="images/portfolio/tablet/image-portfolio-fylo.jpg 1x, images/portfolio/tablet/image-portfolio-fylo@2x.jpg 2x">
-              <img class="project__picture" src="images/portfolio/mobile/image-portfolio-fylo.jpg" width="311" height="288" alt="Preview of the Fylo project"
-                srcset="images/portfolio/mobile/image-portfolio-fylo@2x.jpg 2x">
+                srcset="images/portfolio/glacy-1x.webp 1x, images/portfolio/glacy-2x.webp 2x">
+              <img class="project__picture" src="images/portfolio/glacy-1x.jpg" width="311" height="288" alt="Превью проекта Глэйси"
+                srcset="images/portfolio/glacy-2x.jpg 2x">
             </picture>
             <div class="project__description">
               <h3 class="project__title heading">
-                Fylo
+                Глэйси
               </h3>
               <p class="project__text">
-                This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and
-                built it so that it was fully-responsive. I took a mobile-first approach and used modern
-                CSS like Flexbox and Grid for layout purposes.
+                Двух-страничный интернет-магазин мороженного. Проект был выполнен в рамках курса по базовой верстке - как экзаменационный проект.
               </p>
-              <a class="project__link btn" href="fylo.html">
-                View Project
+              <p class="project__text">
+                Верстка на чистом CSS. Интерактивность сайта реализована с помощью JS (ES5);
+              </p>
+              <a class="project__link btn" href="https://gllacy-28.vercel.app/" target="_blank">
+                Посмотреть проект
+              </a>
+            </div>
+          </li>
+          <li class="works__item project">
+            <picture>
+              <source type="image/webp"
+                srcset="images/portfolio/sedona-1x.webp 1x, images/portfolio/sedona-2x.webp 2x">
+              <img class="project__picture" src="images/portfolio/sedona-1x.jpg" width="311" height="288" alt="Превью проекта Седона"
+                srcset="images/portfolio/sedona-2x.jpg 2x">
+            </picture>
+            <div class="project__description">
+              <h3 class="project__title heading">
+                Седона
+              </h3>
+              <p class="project__text">
+                Двух-страничный информационный сайт городка в Аризоне. Проект был выполнен в рамках курса по базовой верстке - как экзаменационный проект.
+              </p>
+              <p class="project__text">
+                Верстка на чистом CSS. Интерактивность сайта реализована с помощью JS (ES5);
+              </p>
+              <a class="project__link btn" href="https://sedona-28.vercel.app/" target="_blank">
+                Посмотреть проект
               </a>
             </div>
           </li>
         </ul>
       </section>
 
-      <section class="page__block invitation container">
+      <div class="page__block invitation container">
         <p class="invitation__text heading">
-          Interested in doing a&nbsp;project together?
+          Заинтересованы в совместной работе?
         </p>
-        <a href="contact.html" class="invitation__link btn">Contact Me</a>
-      </section>
+        <a href="contact.html" class="invitation__link btn">Дайте мне знать</a>
+      </div>
 
     </main>
 
     <footer class="page__footer main-footer">
       <div class="main-footer__wrapper container">
         <a class="main-link main-link--footer" href="index.html">
-          <span class="visually-hidden">To homepage</span>
+          <span class="visually-hidden">На главную</span>
         </a>
         <div class="main-footer__nav navigation">
           <ul class="navigation__list navigation__list--footer">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Home</a>
+              <a class="navigation__link" href="index.html">На главную</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link">Portfolio</a>
+              <a class="navigation__link navigation__link--current">Портфолио</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="contact.html">Contact Me</a>
+              <a class="navigation__link" href="contact.html">Мои контакты</a>
             </li>
           </ul>
         </div>
         <div class="main-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="https://github.co">
+              <a href="https://github.com/anna9grace" target="_blank">
                 <span class="visually-hidden">Github</span>
                 <svg width="25" height="26">
                   <use xlink:href="images/sprite.svg#github"></use>
@@ -195,18 +190,18 @@
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://twitter.com">
-                <span class="visually-hidden">Twitter</span>
+              <a href="https://t.me/@anna9grace" target="_blank">
+                <span class="visually-hidden">Телеграм</span>
                 <svg width="24" height="26">
-                  <use xlink:href="images/sprite.svg#twitter"></use>
+                  <use xlink:href="images/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://linkedin.com/">
-                <span class="visually-hidden">LinkedIn</span>
+              <a href="https://vk.com/china_cat_sunflower" target="_blank">
+                <span class="visually-hidden">ВКонтакте</span>
                 <svg width="24" height="26">
-                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                  <use xlink:href="images/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
